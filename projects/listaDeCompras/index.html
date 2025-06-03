@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Compras</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <!-- Importando fontes Roboto e Roboto Mono do Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Lista de Compras</h1>
+            <img id="cartIcon" src="./img/icons/shopping-bag.svg" alt="Ícone de sacola que representa o carrinho">
+        </header>
+        <main>
+            <div class="card" data-id="1">
+                <img src="./img/content/mouse.png" alt="Mouse com degrade em um fundo branco">
+                <h3 class="card__title">Mouse Spectra Glide</h3>
+                <p class="card__description">
+                    Mouse ergonômico com acabamento em gradiente vibrante, ideal para games.
+                </p>
+                <p data-price="249.90" class="card__price">
+                    R$ 249,90
+                </p>
+                <button class="btn">Adicionar</button>
+            </div>
+            <div class="card" data-id="2">
+                <img src="./img/content/teclado.png" alt="Teclado com degrade em um fundo branco">
+                <h3 class="card__title">Teclado Neon Keys Pro</h3>
+                <p class="card__description">
+                    Teclado mecânico premium com carcaça em gradiente e switches silenciosos.
+                </p>
+                <p data-price="449.90" class="card__price">
+                    R$ 449,90
+                </p>
+                <button class="btn">Adicionar</button>
+            </div>
+            <div class="card" data-id="3">
+                <img src="./img/content/headset.png" alt="Headset com degrade em um fundo branco">
+                <h3 class="card__title">Headset Echo Pulse</h3>
+                <p class="card__description">
+                    Headset sem fio com som imersivo e design estiloso em roxo e teal metálico.
+                </p>
+                <p data-price="599.90" class="card__price">
+                    R$ 599,90
+                </p>
+                <button class="btn">Adicionar</button>
+            </div>
+            <div class="card" data-id="4">
+                <img src="./img/content/notebook.png" alt="Notebook com degrade em um fundo branco">
+                <h3 class="card__title">Notebook Luminix Aero</h3>
+                <p class="card__description">
+                    Notebook ultrafino com acabamento iridescente e performance de alta eficiência.
+                </p>
+                <p data-price="4299.90" class="card__price">
+                    R$ 4.299,90
+                </p>
+                <button class="btn">Adicionar</button>
+            </div>
+        </main>
+        <aside id="cart">
+            <!-- <h2>Itens no Carrinho</h2>
+            <div class="cartItem" data-id="1">
+                <img src="./img/content/headset.png" alt="Imagem de Item no Carrinho">
+                <div class="cartItem__infos">
+                    <h4>Product Name</h4>
+                    <p>R$ 3.000,00</p>
+                </div>
+                <div class="removeButton">
+                    <img src="./img/icons/trash.svg" alt="Ícone de lixeira">
+                </div>
+            </div>
+            <button id="payButton">Pagar R$ 5000,00</button> -->
+        </aside>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

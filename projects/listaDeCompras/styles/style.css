@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #eaeaea;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #222f3e;
+}
+header{
+    background-color: #0e906f;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+header h1 {
+    font-size: 40px;
+}
+#cartIcon{
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+#cartIcon:hover{
+    transform: scale(1.2);
+}
+
+main{
+    padding: 16px 32px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.card{
+    padding: 8px;
+    background-color: #0e906f;
+    border-radius: 18px;
+    width: 240px;
+}
+.card img{
+    width: 100%;
+    border-radius: 8px;
+}
+.card__title{
+    margin: 4px 0;
+}
+.card__description, .card__price{
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 8px;
+}
+.card__description{
+    color: #222f3e;
+    font-weight: 600;
+}
+.card__price{
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn{
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    background-color: #222f3e;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #eaeaea;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.btn:hover{
+    background-color: #eaeaea;
+    color: #222f3e;
+}
+
+aside {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100%;
+    padding: 16px;
+    background-color: #485461;
+}
+aside h2 {
+    text-align: center;
+}
+.cartItem {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    margin: 16px 0;
+}
+.cartItem > img {
+    width: 100%;
+}
+.cartItem__infos, .removeButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cartItem__infos{
+    background-color: #39434d;
+    text-align: center;
+}
+.removeButton{
+    background-color: #ee5253;
+    cursor: pointer;
+}
+.removeButton:hover {
+    background-color: #ba3c3c;
+}
+.removeButton:hover img{
+    opacity: 0.7;
+}
+
+#payButton{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222f3e;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+#payButton:hover{
+    background-color: #eaeaea;
+    color: #222f3e;
+}
+
+.activeCart{
+    display: block;
+}

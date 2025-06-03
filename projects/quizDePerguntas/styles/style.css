@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    background-color: #001e4d;
+}
+
+.container{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 124px auto 124px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container h1{
+    font-weight: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+header{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    max-width: 500;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-bottom: solid white 2px;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: aliceblue;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    border: solid #333 1px;
+    margin: 10px 0;
+    height: 30px;
+    padding: 0 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn{
+    text-align: center;
+    background-color: #001e4d;
+    color: white;
+    border: none;
+    border-radius:5px;
+    width: 30%;
+    height: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: ease 0.3s;
+    margin: 20px auto 0;
+    display: none; /*faz com que o item fique "invisivel"*/
+}
+
+.correct{
+    background-color: rgb(157, 243, 157);
+}
+
+.incorrect{
+    background-color: rgb(238, 117, 117);
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    border-top: solid white 2px;
+}

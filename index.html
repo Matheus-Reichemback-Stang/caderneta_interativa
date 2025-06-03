@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stack Flux Group</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="shortcut icon" href="./assets/stack_flux_group-icon.ico" type="image/x-icon">
+
+        <!-- Importando fontes: Inter e Roboto Mono do Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="initialPage">
+            <div id="card">
+                <h1 id="title">Stack Flux Group</h1>
+                <div id="profile">
+                    <img src="./assets/stack_flux_group-logo.jpeg" alt="Stack Flux Group - Logo">
+                </div>
+                <form id="form">
+                    <div>
+                        <input id="admName" type="text"  placeholder="NOME DE ADM">
+                        <img class="icon" src="./assets/icons/user.svg" alt="Ícone de usuário">
+                    </div>
+                    <div>
+                        <input id="admPassword" type="password"  placeholder="SENHA">
+                        <img class="icon" src="./assets/icons/key.svg" alt="Ícone de usuário">
+                    </div>
+                    <button id="btn" type="button">
+                        <span>
+                            Acessar
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div id="profiles">
+                <ul>
+                    <li>
+                        Katriel Alves da Silva | RA: 60008666
+                    </li>
+                    <li>
+                        Jhonatan Fermino da Silva | RA: 60005053
+                    </li>
+                    <li>
+                        Matheus Reichemback Stang | RA: 60008208
+                    </li>
+                </ul>
+            </div>
+            <span id="profilesButton">
+                <img src="./assets/icons/people.svg" alt="ícone de pessoas">
+            </span>
+        </div>
+        <div id="contentPage">
+            <aside>
+                <button class="projectButton activated" data-path="validadorDeCpf" type="button">
+                    Validador de CPF
+                </button>
+                <button class="projectButton" data-path="sorteadorDeNomes" type="button">
+                    Sorteador de Nomes
+                </button>
+                <button class="projectButton" data-path="listaDeCompras" type="button">
+                    Lista de Compras
+                </button>
+                <button class="projectButton" data-path="simuladorDeCaixa" type="button">
+                    Simulador de Caixa
+                </button>
+                <button class="projectButton" data-path="jogoDaVelha" type="button">
+                    Jogo da Velha
+                </button>
+                <button class="projectButton" data-path="contadorRegressivo" type="button">
+                    Timer
+                </button>
+                <button class="projectButton" data-path="calculadoraIMC" type="button">
+                    Calculadora IMC
+                </button>
+                <button class="projectButton" data-path="calcularNota" type="button">
+                    Calcular Nota
+                </button>
+                <button class="projectButton" data-path="controleDeVisibilidade" type="button">
+                    Controle de Visibilidade
+                </button>
+                <button class="projectButton" data-path="editorDeTexto" type="button">
+                    Editor de Texto
+                </button>
+                <button class="projectButton" data-path="jogoDeAdvinhacao" type="button">
+                    Jogo de Advinhação
+                </button>
+                <button class="projectButton" data-path="toDoList" type="button">
+                    To-Do List
+                </button>
+                <button class="projectButton" data-path="validacaoDeSenha" type="button">
+                    Validação de senha
+                </button>
+                <button class="projectButton" data-path="conversorDeTemperatura" type="button">
+                    Conversor de Temperatura
+                </button>
+                <button class="projectButton" data-path="cronometro" type="button">
+                    Cronômetro
+                </button>
+                <button class="projectButton" data-path="galeriaDeImagensComFiltro" type="button">
+                    Galeria de Imagens
+                </button>
+                <button class="projectButton" data-path="jogoDeMemoria" type="button">
+                    Jogo da Memoria
+                </button>
+                <button class="projectButton" data-path="quizDePerguntas" type="button">
+                    Quiz
+                </button>
+                <button class="projectButton" data-path="tabuadaInterativa" type="button">
+                    Tabuada Interativa
+                </button>
+                <button class="projectButton" data-path="verificadorDeNumerosPrimos" type="button">
+                    Validador de Primos
+                </button>
+            </aside>
+            <iframe id="screen" src="./projects/validadorDeCpf/index.html" frameborder="0"></iframe>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

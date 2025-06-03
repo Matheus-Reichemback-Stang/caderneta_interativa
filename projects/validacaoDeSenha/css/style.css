@@ -1,0 +1,183 @@
+/* Fonte divertida */
+body {
+  font-family: 'Fredoka One', cursive, sans-serif;
+  background: linear-gradient(180deg, #f0f8ff 0%, #d6eaff 70%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  color: #222;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Nuvens com movimento suave */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #fff, transparent 70%);
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+  animation: floatCloud 15s ease-in-out infinite alternate;
+}
+
+body::before {
+  width: 420px;
+  height: 420px;
+  top: 20px;
+  left: 30px;
+}
+
+body::after {
+  width: 640px;
+  height: 640px;
+  bottom: 50px;
+  right: 50px;
+  animation-delay: 7.5s;
+}
+
+@keyframes floatCloud {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-15px) translateX(20px);
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #7f5af0;
+  text-shadow: 2px 2px 5px #b28fff;
+  z-index: 10;
+  user-select: none;
+}
+
+/* Formulário estilo card */
+form {
+  background: #ffffffdd;
+  padding: 32px 36px;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(127, 90, 240, 0.5);
+  max-width: 420px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+form:focus-within {
+  box-shadow: 0 18px 40px rgba(255, 102, 204, 0.7);
+}   
+
+label {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 14px;
+  color: #4a3cae;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 2.5px solid #7f5af0;
+  font-size: 1.2rem;
+  transition: border-color 0.35s ease;
+  outline-offset: 3px;
+  outline-color: transparent;
+  box-shadow: inset 0 0 7px #b28fff44;
+}
+
+.password-container input:focus {
+  border-color: #ff66cc;
+  outline-color: #ff66cccc;
+  box-shadow: 0 0 10px #ff66ccaa;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #7f5af0;
+  transition: transform 0.35s ease, color 0.35s ease;
+  user-select: none;
+}
+
+#togglePassword:hover {
+  transform: scale(1.25) rotate(10deg);
+  color: #ff66cc;
+}
+
+button.btn-validate {
+  margin-top: 30px;
+  width: 100%;
+  background: linear-gradient(135deg, #7f5af0, #ff66cc);
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 16px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(255, 102, 204, 0.65);
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  user-select: none;
+}
+
+button.btn-validate:hover {
+  box-shadow: 0 12px 28px rgba(255, 102, 204, 0.9);
+  transform: scale(1.07);
+}
+
+/* Feedback card com animação suave e pulso sutil */
+#feedback {
+  margin-top: 32px;
+  background: #fff0f7;
+  padding: 24px 28px;
+  border-radius: 22px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 10px 35px rgba(255, 102, 204, 0.5);
+  font-weight: 700;
+  color: #7f5af0;
+  user-select: none;
+  min-height: 140px;
+  overflow-y: auto;
+  transition: background-color 0.3s ease;
+}
+
+#feedback p {
+  margin: 10px 0;
+  font-size: 1.15rem;
+}
+
+#feedback ul {
+  margin: 12px 0 0 20px;
+  padding-left: 0;
+  list-style-type: disc;
+  font-size: 1rem;
+  color: #d6004f;
+}
+
+.positive {
+  color: #1bb76e;
+}
+
+.negative {
+  color: #d6004f;
+}

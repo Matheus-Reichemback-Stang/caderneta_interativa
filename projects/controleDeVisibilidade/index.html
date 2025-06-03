@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Piece - Seções Interativas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>🗺️ Universo One Piece</h1>
+
+  <div class="container">
+
+    <button class="toggle-btn" onclick="toggleSection('luffy', this)">
+      <span class="icon">⬇️</span> Monkey D. Luffy
+    </button>
+    <div class="secao" id="luffy">
+      <img src="assents/luffy.jpeg" alt="Luffy">
+      <p><strong>Monkey D. Luffy</strong> é o capitão dos Piratas do Chapéu de Palha. Seu sonho é se tornar o Rei dos Piratas e encontrar o lendário tesouro "One Piece". Ele possui poderes da Gomu Gomu no Mi, uma fruta do diabo que torna seu corpo elástico.</p>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleSection('zoro', this)">
+      <span class="icon">⬇️</span> Roronoa Zoro
+    </button>
+    <div class="secao" id="zoro">
+      <img src="assents/zoro.jpeg" alt="Zoro">
+      <p><strong>Roronoa Zoro</strong> é o espadachim do bando do Luffy. Seu estilo de luta é baseado em três espadas, conhecido como Santoryu. Seu objetivo é se tornar o maior espadachim do mundo.</p>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleSection('nami', this)">
+      <span class="icon">⬇️</span> Nami
+    </button>
+    <div class="secao" id="nami">
+      <img src="assents/nami.jpeg" alt="Nami">
+      <p><strong>Nami</strong> é a navegadora dos Chapéus de Palha. Habilidosa em cartografia e clima, seu sonho é criar o mapa completo do mundo.</p>
+    </div>
+
+  </div>
+
+  <script src="js/scripty.js"></script>
+</body>
+</html>

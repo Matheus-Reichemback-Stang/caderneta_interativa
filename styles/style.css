@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/leaves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#initialPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    background-color: #1e272e;
+    padding: 32px;
+    border-radius: 24px;
+}
+#title{
+    text-align: center;
+    font-size: 48px;
+    color: #EAEAEA;
+}
+#profile{
+    text-align: center;
+}
+#profile img{
+    height: 136px;
+    width: 136px;
+    border-radius: 8px;
+    margin-top: 16px;
+    border: 2px solid #EAEAEA;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form div{
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin-top: 24px;
+}
+#form .icon{
+    position: absolute;
+    top: 6px;
+    right: 4px;
+}
+#form div input {
+    display: block;
+    width: 100%;
+    padding: 6px 4px;
+    border: none;
+    border-bottom: 3px solid #EAEAEA;
+    background-color: transparent;
+    font-size: 18px;
+    color: #EAEAEA;
+}
+#form div input:focus{
+    outline: none;
+}
+#form input::placeholder{
+    color: #EAEAEA;
+    text-transform: uppercase;
+}
+#btn{
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    margin-top: 24px;
+    border-radius: 24px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #EAEAEA;
+    color: #EAEAEA;
+    cursor: pointer;
+    transition: ease 0.5s;
+    overflow: hidden;
+}
+@keyframes wave {
+    0% {
+        rotate: 0deg;
+    }
+    100%{
+        rotate:360deg;
+    }
+}
+#btn::before{
+    position: absolute;
+    content: "";
+    width: 600px;
+    height: 600px;
+    top: -570px;
+    left: -120px;
+    background-color: #485460;
+    border-radius: 45%;
+    z-index: 1;
+    transition: 1s all ease-in-out;
+    animation: wave 6s linear infinite;
+}
+#btn::after{
+    position: absolute;
+    content: "";
+    width: 600px;
+    height: 600px;
+    top: -560px;
+    left: -120px;
+    background-color: #1e272e;
+    border-radius: 42%;
+    transition: 1s all ease-in-out;
+    animation: wave 6s linear infinite;
+}
+#btn span{
+    position: relative;
+    z-index: 10;
+}
+#btn:hover{
+    color: #1e272e;
+}
+#btn:hover::after, #btn:hover::before{
+    top: -648px;
+}
+
+#profiles{
+    display: none;
+    position: absolute;
+    bottom: 89px;
+    left: 32px;
+    background-color: #eaeaea;
+    padding: 16px;
+    border-radius: 16px;
+    z-index: 1000;
+}
+#profiles.activeProfiles{
+    display: block;
+}
+#profiles ul li{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    padding: 4px 0;
+    color: #1e272e;
+}
+#profilesButton{
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    width: 50px;
+    height: 50px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #1e272e;
+    transition: all 0.3s;
+}
+#profilesButton:hover, #profilesButton.filter{
+    filter: brightness(0.7)
+}
+
+#contentPage{
+    display: none;
+    grid-template-columns: 15% auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: #485460;
+    overflow-x: hidden;
+}
+
+#contentPage iframe{
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+#contentPage aside{
+    background-color: #1e272e;
+}
+
+.projectButton{
+    width: 100%;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #1e272e;
+    color: #eaeaea;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+.projectButton.activated, .projectButton:hover{
+    background-color: #eaeaea;
+    color: #1e272e;
+}

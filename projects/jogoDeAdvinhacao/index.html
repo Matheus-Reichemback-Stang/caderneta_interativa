@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Adivinhação - LoL Style</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Adivinhe o Número!</h1>
+    <p>Escolha um número de 1 a 100</p>
+    <input type="number" id="palpite" min="1" max="100" />
+    <br>
+    <button onclick="verificarPalpite()">Enviar Palpite</button>
+    <button id="reiniciar" onclick="reiniciarJogo()">Jogar Novamente</button>
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

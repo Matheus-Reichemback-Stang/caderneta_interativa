@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px 0 25px;
+    background-color: black;
+    border-bottom: ridge rgb(255, 255, 255) 2px ;
+}
+
+main{
+    background: linear-gradient(to right, rgb(44, 36, 116), rgb(66, 28, 116), rgb(20, 66, 109));
+    height: 80vh;
+    place-content: center;
+    display: grid;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600;
+    padding: 24px;
+    border: solid rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+#numero{
+    padding: 8px;
+    font-size: 20px;
+    border: solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+button{
+    font-size: 16px;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: solid rgb(44, 44, 44) 2px;
+    border-radius: 16px;
+}
+
+button:hover{
+    transition: 0.5s ease;
+    background-color: white;
+    color: black;
+}
+
+.resultado{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    border-top: solid white 2px;
+}

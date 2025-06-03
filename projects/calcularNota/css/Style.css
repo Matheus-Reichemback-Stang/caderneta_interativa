@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka One', cursive;
+}
+
+body {
+  background: linear-gradient(135deg, #0bb867, #054fd8);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  background-color: #e6dfdfb9;
+  border: 5px dashed #5c0364;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #6e08a8;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+input {
+  width: 80%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 2px solid #4d0769;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #ffffffa4;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #5c0ab9;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ee8207;
+}
+
+.result-text, .status-text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.result-text.animated, .status-text.animated {
+  animation: pulse 0.6s ease;
+}
+
+.main.shake {
+  animation: shake 0.4s ease;
+}
+
+/* Cartoon-style animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}

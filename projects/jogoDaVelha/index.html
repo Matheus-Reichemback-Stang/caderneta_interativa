@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Velha</title>
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <!-- Importando fonte Itim do Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="background">
+            <section class="title">
+                <h1>Jogo da Velha</h1>
+            </section>
+            <section class="display">
+                Está no turno do jogador <span class="display-player playerX">X</span>
+            </section>
+            <section class="container">
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+                <div class="tile"></div>
+            </section>
+            <section class="display announcer hide"></section>
+            <section class="controls">
+                <button id="reset">Resetar</button>
+            </section>
+        </main>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

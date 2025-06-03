@@ -1,0 +1,90 @@
+:root {
+  --bg-color: linear-gradient(135deg, #df8fcbd0, #e0cd5db2);
+  --text-color: #000000;
+  --task-bg: #e893f0a9;
+  --completed-bg: #d0f0d0;
+}
+
+body.dark {
+  --bg-color: linear-gradient(135deg, #241b29, #2a253ae3);
+  --text-color: #292424;
+  --task-bg: #749eb946;
+  --completed-bg: #10f180ab;
+}
+
+body {
+  background: var(--bg-color); /* ALTERADO para aceitar gradiente */
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85); /* fundo da caixa leve para contraste */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #0b8d779d;
+  border-radius: 8px;
+}
+
+#addTaskBtn, #toggleDarkMode {
+  padding: 10px;
+  background-color: #0b95b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#taskList li {
+  background-color: var(--task-bg);
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+#taskList li.completed {
+  background-color: var(--completed-bg);
+  text-decoration: line-through;
+  color: gray;
+}
+
+#taskList li.completed::before {
+  content: "✔️ ";
+}
+
+#taskList button {
+  background-color: #312a2aea;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}

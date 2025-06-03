@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens com filtro</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+        <header>
+            <h1>Galeria de Imagens com Filtro</h1>
+        </header>
+        <main>
+            <section class="content">
+                <ul class="filter">
+                    <li class="item active" data-filter="todos">Todos</li>
+                    <li class="item" data-filter="desenho">Desenhos</li>
+                    <li class="item" data-filter="maca">Maçã</li>
+                    <li class="item" data-filter="cars">Carros</li>
+                    <li class="item" data-filter="cleiton">Cleiton</li>
+                </ul>
+                <ul class="itens">
+                    <li class="item cars"><img src="assets/car1.webp" alt=""></li>
+                    <li class="item cars"><img src="assets/car2.jpg" alt=""></li>
+                    <li class="item cars"><img src="assets/car3.webp" alt=""></li>
+                    <li class="item cleiton"><img src="assets/cleiton1.jpg" alt=""></li>
+                    <li class="item cleiton"><img src="assets/cleiton2.jpg" alt=""></li>
+                    <li class="item cleiton"><img src="assets/cleiton3.jpg" alt=""></li>
+                    <li class="item desenho"><img src="assets/desenho1.jpeg" alt=""></li>
+                    <li class="item desenho"><img src="assets/desenho2.jpg" alt=""></li>
+                    <li class="item desenho"><img src="assets/desenho3.avif" alt=""></li>
+                    <li class="item maca"><img src="assets/maca1.webp" alt=""></li>
+                    <li class="item maca"><img src="assets/maca2.png" alt=""></li>
+                    <li class="item maca"><img src="assets/maca3.webp" alt=""></li>
+                </ul>
+            </section>
+        </main>
+        <footer>&copy;<em>Jhonatan</em></footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterItems = document.querySelectorAll(".filter .item");
+            const galleryItems = document.querySelectorAll(".itens .item");
+
+            filterItems.forEach(button => {
+                button.addEventListener("click", () => {
+                    // Remove classe ativa de todos
+                    filterItems.forEach(btn => btn.classList.remove("active"));
+                    button.classList.add("active");
+
+                    const filter = button.getAttribute("data-filter");
+
+                    galleryItems.forEach(item => {
+                        // Mostrar todos
+                        if (filter === "todos") {
+                            item.style.display = "block";
+                        } else {
+                            // Verifica se o item tem a classe correspondente
+                            if (item.classList.contains(filter)) {
+                                item.style.display = "block";
+                            } else {
+                                item.style.display = "none";
+                            }
+                        }
+                    });
+
+                    console.log("Filtro selecionado:", filter);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

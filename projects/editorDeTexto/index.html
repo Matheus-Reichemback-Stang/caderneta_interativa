@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editor Estilo Word</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="editor-container">
+    <div class="toolbar">
+      <button id="bold"><b>B</b></button>
+      <button id="italic"><i>I</i></button>
+      <button id="underline"><u>U</u></button>
+
+      <select id="fontName">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+
+      <select id="fontSize">
+        <option value="2">10px</option>
+        <option value="3" selected>12px</option>
+        <option value="4">14px</option>
+        <option value="5">18px</option>
+        <option value="6">24px</option>
+      </select>
+
+      <button onclick="formatText('justifyLeft')">⬅</button>
+      <button onclick="formatText('justifyCenter')">⏺</button>
+      <button onclick="formatText('justifyRight')">➡</button>
+
+      <input type="color" id="fontColor" class="color-picker" title="Cor da fonte" />
+
+      <button id="clear">🧹 Limpar</button>
+      <button id="save">💾 Salvar .txt</button>
+    </div>
+
+    <div id="editor" class="editor" contenteditable="true"></div>
+  </div>
+
+  <script src="js/scripty.js"></script>
+</body>
+</html>

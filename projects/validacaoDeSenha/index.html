@@ -1,0 +1,28 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Validador de Senha Gear 5</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+    <h1>Validador de Senha Gear 5</h1>
+
+    <form id="passwordForm" autocomplete="off" novalidate>
+        <label for="password">Digite sua senha:</label>
+        <div class="password-container">
+        <input type="password" id="password" name="password" aria-describedby="feedback" required />
+        <button type="button" id="togglePassword" aria-label="Mostrar ou ocultar senha" title="Mostrar/ocultar senha">👁️</button>
+        </div>
+        <button type="submit" class="btn-validate" aria-live="polite">Validar</button>
+    </form>
+
+    <div id="feedback" aria-live="polite" role="region" aria-atomic="true"></div>
+
+    <script src="js/scrypts.js"></script>
+    </body>
+    </html>

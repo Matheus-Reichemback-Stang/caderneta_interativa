@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validador de CPF</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <!-- Importando fonte Roboto & Baloo Thambi 2-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="./img/validador_de_cpf-logo.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Validador de CPF</h1>
+        <p>
+            Digite um CPF para receber uma validação do mesmo.
+        </p>
+        <div id="container">
+            <form id="form">
+                <label for="cpf">CPF (sem pontos e traço)</label>
+                <input id="cpf" type="text" placeholder="Exemplo: 12345678910">
+                <button id="btn" type="submit">Validar</button>
+            </form>
+        </div>
+        <p id="answer">
+        </p>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
