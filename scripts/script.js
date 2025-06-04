@@ -7,6 +7,15 @@ const accessButton = document.getElementById("btn");
 const projectButtons = document.getElementsByClassName("projectButton")
 const screenIframe = document.getElementById("screen")
 
+
+const admNameStorage = localStorage.getItem('user_name');
+const admPasswordStorage = localStorage.getItem('user_password');
+
+if(admNameStorage != null && admPasswordStorage != null){
+    admName.value = admNameStorage;
+    admPassword.value = admPasswordStorage;
+}
+
 // Elementos do botão que acessa os perfis
 const profilesButton = document.getElementById("profilesButton")
 const profiles = document.getElementById("profiles")
@@ -26,8 +35,6 @@ profilesButton.addEventListener('click', function() {
 
 // Adiciona um evento no botão de acessar na página inicial
 accessButton.addEventListener("click", function() {
-    const admNameStorage = localStorage.getItem('user_name');
-    const admPasswordStorage = localStorage.getItem('user_password');
     if(admNameStorage != null && admPasswordStorage != null){
         if(admName.value.trim() == "" || admPassword.value.trim() == ""){
         alert("Há campos não preenchidos!")
