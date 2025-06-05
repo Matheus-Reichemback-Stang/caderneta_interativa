@@ -81,13 +81,3 @@ header{
 .incorrect{
     background-color: rgb(238, 117, 117);
 }
-
-footer{
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    font-size: 25px;
-    border-top: solid white 2px;
-}

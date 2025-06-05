@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+}
 header{
     width: 100%;
     text-align: center;
@@ -14,7 +18,7 @@ header{
 
 main{
     background: linear-gradient(to right, rgb(44, 36, 116), rgb(66, 28, 116), rgb(20, 66, 109));
-    height: 80vh;
+    height: calc(100% - 84px);
     place-content: center;
     display: grid;
 }
@@ -61,14 +65,4 @@ button:hover{
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 20px;
-}
-
-footer{
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    font-size: 25px;
-    border-top: solid white 2px;
 }
